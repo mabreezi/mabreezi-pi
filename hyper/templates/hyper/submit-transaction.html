@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Submit A Transaction{% endblock %}
+
+{% block section_title %} {{ section_name }} {% endblock %}
+
+{% block content %}
+<div>
+	<h2>Send Funds to Another Person</h2>	
+</div>
+<div>
+	<form acition="." method=post>
+		{{form.as_p}}
+		{% csrf_token %}
+		<p><button>Submit</button></p>
+	</form>
+</div>
+{% endblock %}

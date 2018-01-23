@@ -1,0 +1,4 @@
+hyper/migrations
+*.pyc
+.DS_Store
+db*
